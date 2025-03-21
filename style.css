@@ -107,6 +107,12 @@ transform: translateY(-1px);
   cursor: pointer;
 }
 
+.emailValid{
+  margin-left: 5rem;
+  color: var(--primary-color);
+  display: none;
+}
+
   /* media query */
 
   /* TABLET */
@@ -127,9 +133,9 @@ transform: translateY(-1px);
     max-width: 18rem; 
   }
   .emailValid{
-    margin-left: 5.4rem;
+    margin-left: 4rem;
     color: var(--primary-color);
-      display: none;
+    display: none;
   }
 
 }
