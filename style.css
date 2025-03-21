@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'success.css';
+:root{
+    /* colors */
+    --primary-color: hsl(4, 100%, 67%);
+    --neutral-blue-800 : hsl(234, 29%, 20%);
+    --neutral-blue-700 : hsl(235, 18%, 26%);
+    --neutral-grey : hsl(0, 0%,58%);
+    --neutral-white : hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif ;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-blue-800);
+}
+
+.containerParent{
+  background-color: var(--neutral-white);
+  border-radius: 0 0 1rem 1rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.containerParent__picture {
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style-type: none;
+  margin-left: -2.5rem;
+}
+.list{
+  margin-top: 1rem;
+}
+li img{
+  margin-right: 0.5rem;
+}
+
+.shift-right {
+  display: inline-block;
+  margin-left: 1.8rem;}
+
+.container{
+  background-color: var(--neutral-white);
+  margin-left: 1rem;
+}
+
+.container >p img{
+  margin-right: 0.5rem;
+}
+
+.container__email{
+  color: var(--neutral-blue-800);
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-bottom: -0.3rem;
+}
+
+#container__button{
+  border: solid 0.1rem var(--neutral-grey);
+  color: var(--neutral-white);
+  font-weight: 700;
+  font-size: 0.8rem;
+  background-color: var(--neutral-blue-800);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+#container__button:hover{
+background-color: var(--primary-color) ;
+box-shadow: 0 0.5rem 1rem var(--primary-color);
+transform: translateY(-1px);
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-error {
+  border: 0.1rem solid var(--primary-color) !important;
+  background-color: #ffe6e6; 
+  color: var(--primary-color); 
+}
+
+#container__button, #email {
+  width: 100%; 
+  max-width: 22rem; 
+  min-height: 3rem;
+}
+
+#email{
+  border: solid 0.1rem var(--neutral-grey) ;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+  /* media query */
+
+  /* TABLET */
+
+@media screen and (min-width:360px) {
+  .containerParent {
+      min-width: auto;
+  }
+
+  body{
+      font-size: 0.8rem;
+  }
+
+  li img{
+    width: 1rem;
+  }
+  #container__button, #email {
+    max-width: 18rem; 
+  }
+  .emailValid{
+    margin-left: 5.4rem;
+    color: var(--primary-color);
+      display: none;
+  }
+
+}
+  
+#container__button,#email,.container__email{
+  margin-left: 0rem;
+}
+  
+.containerParent__picture{
+  margin-top: -1rem;
+  width: 20rem;
+}
+
+  /* DESKTOP */
+@media screen and (min-width: 769px){
+  body{
+    font-size: 1rem;
+  }
+
+  .h1{
+    font-size: 3rem;
+    margin-top: -2rem;
+  }
+
+  .paragraph{
+    margin-top: -2rem;
+    padding: 1rem;
+  }
+
+  ul{
+    margin-left: 2rem;
+    margin-top: -1rem;
+  }
+
+  .containerParent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-height: 32rem;
+    max-width: 58rem; 
+    padding: 2rem;
+  }
+
+  .containerParent__picture{
+    max-width: 100%;
+    padding-top: 3rem;
+    margin-top: -3rem;
+    height: auto; 
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10rem;
+    margin: 0 2rem 0 -2rem;
+    padding: 2rem;
+  }
+  
+  .break{
+    display: none;
+  }
+  .shift-right{
+    margin-left: 0;
+  }
+
+  #form{
+    margin-top: -6rem;
+    margin-left: 0;
+  }
+
+  #container__button,#email,.container__email{
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+  .emailValid{
+    margin-left: 9rem;
+    color: var(--primary-color);
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:770px) {
+
+  .containerParent{
+    padding-left: 3rem;
+    min-width: 46rem;
+  }
+
+  .h1{
+    font-size: 3rem;
+    margin: 0 0 1rem ;
+  }
+  .h1, .paragraph{
+    margin-left: -4rem;
+  }
+
+  .paragraph{
+    margin-top: -1rem;
+  }
+
+  li{
+    margin-left: -5rem;
+    margin-top: 1rem;
+  }
+
+  #form{
+    margin-left: -4rem;
+    margin-top: 0;
+  }
+ 
+  #container__button,#email{
+    min-width: 22rem;
+    margin-top: 0;
+  }
+  .emailValid{
+    margin-left: 9rem;
+    color: var(--primary-color);
+    display: none;
+  }
+
+} 
+
+.attribution { font-size: 11px; 
+  text-align: center; 
+  margin-top: 1rem;
+  background-color: var(--neutral-white);
+  padding: 0.1rem;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline ;
+}

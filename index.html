@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <main class="containerParent">
+      
+    <picture>
+      <!-- Image pour les grands écrans (desktop) -->
+      <source media="(min-width: 769px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <!-- Image pour les petits écrans (mobile) -->
+      <source media="(max-width: 768px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+      <!-- Image de secours -->
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="Illustration d'inscription" class="containerParent__picture">
+    </picture>
+    
+      <div class="container">
+        <h1 class="h1">Stay updated!</h1>
+    
+        <p class="paragraph">Join 60,000+ product managers receiving <br>
+        monthly updates on:</p>
+        <ul>
+          <li><img src="/assets/images/icon-list.svg" alt="Ion list"> Product discovery and building what <br class="break"><span class="shift-right">amatters</span></li>
+          <li class="list"><img src="/assets/images/icon-list.svg" alt="Ion list"> Measuring to ensure updates are a <br class="break"><span class="shift-right">success</span></li>
+          <li class="list"><img src="/assets/images/icon-list.svg" alt="Ion list"> And much more!</li>
+        </ul>
+          
+        <form action="#" method="post" id="form" novalidate>
+          <label for="email" class="container__email">Email address <span class="emailValid">Valid email required</span></label>
+          <input type="email" id="email" name="email" placeholder= "  email@company.com">
+          <button type="submit" id="container__button">Subscribe to monthly newsletter</button>
+        </form>
+
+      </div>
+    </main>
+
+  <!-- Sign-up form end -->
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ariel172" target="_blank">Yamien Ariel</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
